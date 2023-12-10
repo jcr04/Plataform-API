@@ -28,7 +28,7 @@ go run ./cmd/server/main.go
 ```
 
 ## Endpoints
-Endpoint cadastrado na API como forma de exemplo, em teste real adicione sua propria api com as configurações necessarias
+Endpoint cadastrado na (API)[https://github.com/jcr04/AUAUPETS.go] como forma de exemplo, em teste real adicione sua propria api com as configurações necessarias
 
 ### Rotas para Animais
 * GET `/animals`: Lista todos os registros de animais.
@@ -37,4 +37,25 @@ Endpoint cadastrado na API como forma de exemplo, em teste real adicione sua pro
 ## Autenticação
 
 Todas as rotas protegidas exigem um cabeçalho de autenticação na solicitação. A autenticação é realizada via token JWT. Inclua o seguinte cabeçalho em suas solicitações para rotas protegidas:
+* Authorization: `Bearer YOUR_JWT_TOKEN`
+
+
+## Erros
+
+A API usa o seguinte formato de erro:
+
+```json
+{
+  "success": false,
+  "error": {
+    "code": "código_de_erro",
+    "message": "Mensagem de erro descritiva."
+  }
+}
+```
+## Rate Limiting
+Para garantir a qualidade do serviço, a API impõe limites de taxa de solicitação. Se você exceder esses limites, receberá uma resposta 429 Too Many Requests.
+
+## Exemplos de Solicitações
+* - ![Screenshot_2](https://github.com/jcr04/Plataform-API/assets/70778525/f3240772-0697-45fe-94d1-d032101058c6)
 
