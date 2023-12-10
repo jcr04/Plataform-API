@@ -28,7 +28,7 @@ go run ./cmd/server/main.go
 ```
 
 ## Endpoints
-Endpoint cadastrado na (API)[https://github.com/jcr04/AUAUPETS.go] como forma de exemplo, em teste real adicione sua propria api com as configurações necessarias
+Endpoint cadastrado na [API](https://github.com/jcr04/AUAUPETS.go) como forma de exemplo, em teste real adicione sua propria api com as configurações necessarias
 
 ### Rotas para Animais
 * GET `/animals`: Lista todos os registros de animais.
